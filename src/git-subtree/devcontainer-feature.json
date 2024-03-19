@@ -1,9 +1,6 @@
 {
   "name": "git subtree (for Debian/Ubuntu)",
   "documentationURL": "https://manpages.debian.org/testing/git-man/git-subtree.1.en.html",
-  "dependsOn": {
-    "ghcr.io/devcontainers/features/git:1": {}
-  },
   "id": "git-subtree",
   "version": "0.0.1",
   "description": "Installs 'git subtree' on Ubuntu"

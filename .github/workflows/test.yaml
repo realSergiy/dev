@@ -1,4 +1,4 @@
-name: "CI - Test Features"
+name: "Test Features"
 on:
   push:
     branches:
@@ -15,8 +15,8 @@ jobs:
         features:
           - git-subtree
         baseImage:
-          - debian:latest
-          - ubuntu:latest
+          # - debian:latest
+          # - ubuntu:latest
           - mcr.microsoft.com/devcontainers/base:ubuntu
     steps:
       - uses: actions/checkout@v4
