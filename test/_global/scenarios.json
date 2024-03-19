@@ -1,8 +1,8 @@
 {
-    "color_and_hello": {
+    "git-subtree": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
-            "git-subtree": {}            
+            "git-subtree": {}
         }
     }
 }
