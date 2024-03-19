@@ -16,8 +16,8 @@ set -e
 # Optional: Import test library bundled with the devcontainer CLI
 source dev-container-features-test-lib
 
-echo -e "The result of the 'git subtree' command will be:\n"
-git subtree
+echo -e "The result of the \"'git subtree | grep 'git subtree'\" command will be:\n"
+git subtree | grep 'git subtree'
 echo -e "\n"
 
 # Feature-specific tests
