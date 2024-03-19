@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This test file will be executed against an auto-generated devcontainer.json that
-# includes the 'color' Feature with no options.
+# includes the 'git-subtree' Feature with no options.
 #
 # For more information, see: https://github.com/devcontainers/cli/blob/main/docs/features/test.md
 #
@@ -9,7 +9,7 @@
 # {
 #    "image": "<..some-base-image...>",
 #    "features": {
-#      "color": {}
+#      "git-subtree": {}
 #    },
 #    "remoteUser": "root"
 # }
@@ -40,7 +40,7 @@ source dev-container-features-test-lib
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib. Syntax is...
 # check <LABEL> <cmd> [args...]
-check "validate favorite color" color | grep 'my favorite color is red'
+check "validate installed" git subtree add --help | grep 'usage: git subtree add'
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.
