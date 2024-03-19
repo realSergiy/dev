@@ -17,15 +17,13 @@ set -e
 source dev-container-features-test-lib
 
 echo -e "The result of the 'color' command will be:\n"
-color
-echo -e "The result of the 'hello' command will be:\n"
-hello
+git-subtree
 echo -e "\n"
 
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
-check "check purple is my favorite color" bash -c "color | grep 'my favorite color is purple'"
-check "check I am greeting with 'Greetings'" bash -c "hello | grep 'Greetings, $(whoami)'"
+# check "check purple is my favorite color" bash -c "color | grep 'my favorite color is purple'"
+# check "check I am greeting with 'Greetings'" bash -c "hello | grep 'Greetings, $(whoami)'"
 
 
 # Report result

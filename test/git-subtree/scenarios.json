@@ -1,10 +1,8 @@
 {
-    "hello": {
+    "successfully-installed": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
-            "hello": {
-                "greeting": "hello"
-            }
+            "git-subtree": {}
         }
     }
 }
